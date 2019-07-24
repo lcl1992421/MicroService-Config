@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 3000
+spring:
+  profiles: dev #开发环境
+  application:
+    name: MICROSERVICE-USER-DEV
+---
+server:
+  port: 3001
+spring:
+  profiles: test #测试环境
+  application:
+    name: MICROSERVICE-USER-TEST
